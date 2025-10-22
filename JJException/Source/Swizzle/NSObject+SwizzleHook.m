@@ -132,6 +132,7 @@ void jj_swizzleDeallocIfNeeded(Class class)
             break;
         }
     }
+    free(method);
     
     if ( dealloc == NULL ) {
         Class superclass = class_getSuperclass(class);
